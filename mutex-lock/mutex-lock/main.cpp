@@ -23,6 +23,8 @@ int main(int argc, const char * argv[]) {
     pthread_t threads[NUM_THREADS];
     int threadArgs[NUM_THREADS];
     int resultCode = 0;
+    
+    test_promise_and_future();
 
     for (int i=0; i < NUM_THREADS; i++) {
         threadArgs[i] = i;
