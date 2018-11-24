@@ -34,8 +34,6 @@ int main(int argc, const char * argv[]) {
     std::cout << "Sum: " << *sum << std::endl;
     std::cout << "Factorial: " << *fac << std::endl;
 
-    std::cout << std::endl;
-
     delete sum;
     delete fac;
     
