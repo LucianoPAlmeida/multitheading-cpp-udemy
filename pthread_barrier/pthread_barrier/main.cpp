@@ -43,7 +43,7 @@ int main(int argc, const char * argv[]) {
 }
 
 void* sum_worker(void* arg) {
-    int* sum = (int*) malloc(sizeof(int));
+    int* sum = new int;
     *sum = 0;
     int * numbers = static_cast<int*>(arg);
     for (int i = 0; i < NUMBER_COUNT; i++)
@@ -52,7 +52,7 @@ void* sum_worker(void* arg) {
 }
 
 void* factor_worker(void* arg) {
-    int* fac = (int*) malloc(sizeof(int));
+    int* fac = new int;
     *fac = 1;
     int * numbers = static_cast<int*>(arg);
     for (int i = 0; i < NUMBER_COUNT; i++)
