@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:pthread_barrier/pthread_barrier.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:mutex-lock/mutex-lock.xcodeproj">
+   </FileRef>
+</Workspace>
