@@ -46,7 +46,7 @@ void* sum_worker(void* arg) {
     int * numbers = static_cast<int*>(arg);
     for (int i = 0; i < NUMBER_COUNT; i++)
         *sum+= numbers[i];
-    return reinterpret_cast<void*>(sum);
+    return static_cast<void*>(sum);
 }
 
 void* factor_worker(void* arg) {
@@ -55,5 +55,5 @@ void* factor_worker(void* arg) {
     int * numbers = static_cast<int*>(arg);
     for (int i = 0; i < NUMBER_COUNT; i++)
         *fac*= numbers[i];
-    return reinterpret_cast<void*>(fac);
+    return static_cast<void*>(fac);
 }
